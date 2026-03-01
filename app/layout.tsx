@@ -27,14 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${ovo.variable} ${outfit.classNam} antialiased`}
+        className={`${outfit.variable} ${ovo.variable} ${outfit.className} antialiased`}
       >
         <Navbar />
         <main className="min-h-screen">
             {children}
-
         </main>
-        <Footer />
+       <Footer />
       </body>
     </html>
   );

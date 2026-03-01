@@ -52,10 +52,10 @@
   --gradient-warm: linear-gradient(135deg, #ff9a17 0%, #ffb217 100%); */
   
   /* Shadow Colors (with opacity) */
-  /* --shadow-primary-sm: 0 4px 20px rgba(240, 140, 0, 0.2);
+  --shadow-primary-sm: 0 4px 20px rgba(240, 140, 0, 0.2);
   --shadow-primary-md: 0 8px 30px rgba(240, 140, 0, 0.35);
   --shadow-primary-lg: 0 12px 40px rgba(240, 140, 0, 0.4);
-  --shadow-primary-xl: 0 20px 60px rgba(240, 140, 0, 0.3); */
+  --shadow-primary-xl: 0 20px 60px rgba(240, 140, 0, 0.3);
   
   /* Background Overlays */
   /* --overlay-primary-light: rgba(240, 140, 0, 0.1);

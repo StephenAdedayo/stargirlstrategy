@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className="flex flex-wrap md:flex-row flex-col justify-between w-full md:w-[45%] md:gap-5 gap-8">
                     {linkSections.map((section, index) => (
                         <div key={index}>
-                            <h3 className="font-semibold text-base text-primary/90 md:mb-5 mb-2">{section.title}</h3>
+                            <h3 className="font-semibold text-base text-primary/80 md:mb-5 mb-2">{section.title}</h3>
                             <ul className="text-sm space-y-1">
                                 {section.links.map((link, i) => (
                                     <li key={i}>

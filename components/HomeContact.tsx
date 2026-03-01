@@ -1,30 +1,9 @@
-"use client"
 
-import React, { useState } from 'react';
+import React from 'react';
+import Form from './Form';
 
 const HomeContact = () =>  {
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: ''
-  });
-
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
 
   const contactMethods = [
     {
@@ -103,110 +82,13 @@ const HomeContact = () =>  {
           
           {/* Right Side - Form */}
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl lg:p-12 px-6 py-10 flex-[60%] w-full">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              
-              {/* Name Fields */}
-              <div className="flex sm:flex-row flex-col w-full gap-5">
-                <div className='w-full'>
-                  <label className="block text-sm font-semibold mb-3">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="John"
-                    required
-                    className="w-full  px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                  />
-                </div>
-                <div className='w-full'>
-                  <label className="block text-sm font-semibold mb-3">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    placeholder="Doe"
-                    required
-                    className="w-full   px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                  />
-                </div>
-              </div>
-              
-              {/* Email */}
-              <div>
-                <label className="block text-sm font-semibold mb-3">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="john@company.com"
-                  required
-                  className="w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                />
-              </div>
-              
-              {/* Phone */}
-              <div>
-                <label className="block text-sm font-semibold mb-3">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+1 (234) 567-890"
-                  className="w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                />
-              </div>
-              
-              {/* Company */}
-              <div>
-                <label className="block text-sm font-semibold mb-3">
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder="Your Company"
-                  className="w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"
-                />
-              </div>
-              
-              {/* Message */}
-              <div>
-                <label className="block text-sm font-semibold mb-3">
-                  How can we help?
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Tell us about your project and goals..."
-                  required
-                  rows={5}
-                  className="w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all resize-none"
-                />
-              </div>
-              
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-linear-to-r from-orange-500 to-orange-400 text-white px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-primary-lg mt-4"
-              >
-                Send Message
-              </button>
-            </form>
+              <Form input1={"w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"}
+              input2={"w-full   px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"}
+              input3={"w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"}
+              input4={"w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"}
+              input5={"w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all"}
+              textarea={"w-full px-5 py-4 bg-white/8 border border-white/15 rounded-xl text-white placeholder:text-white/50 focus:outline-none focus:bg-white/12 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 transition-all resize-none"}
+              />
           </div>
           
         </div>
