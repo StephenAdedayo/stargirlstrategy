@@ -1,8 +1,14 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const Cta = () => {
+interface CtaProps {
+  href: string;
+  text: string;
+}
+
+const Cta = ({href, text}: CtaProps) => {
   return (
     <div className='relative h-[50vh] '>
         
@@ -21,7 +27,7 @@ const Cta = () => {
                 
                  
                 <button className='mt-5 hover:-translate-y-2 active:scale-105 transition-all duration-300 '>
-                    <a href="" className='bg-linear-to-br from-orange-500 to-orange-400  cursor-pointer  text-white rounded-full px-6 py-3'>Request a Quote</a>
+                    <a href={href} className='bg-linear-to-br from-orange-500 to-orange-400  cursor-pointer  text-white rounded-full px-6 py-3'>{text}</a>
                 </button>
                
          </div>

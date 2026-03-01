@@ -9,7 +9,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>
+    <div className='transition duration-500 opacity-100 ease-in'>
       <Hero />
       <BelowHero />
       <HomeServices />

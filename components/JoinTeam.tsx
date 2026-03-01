@@ -48,7 +48,7 @@ const JoinTeam = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="bg-orange-500 backdrop-blur-md border border-white/20 rounded-3xl p-10 text-center transition-all duration-300 hover:-translate-y-2"
+              className="bg-linear-to-br from-orange-500 via-orange-400 to-orange-300 backdrop-blur-md border border-white/20 rounded-3xl p-10 text-center transition-all duration-300 hover:-translate-y-2"
             >
               <div className="md:text-4xl text-4xl mb-4">
                 {benefit.icon}

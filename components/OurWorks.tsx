@@ -1,3 +1,5 @@
+import { assets } from '@/assets/assets';
+import Image from 'next/image';
 import React from 'react';
 
 const OurWorks = () => {
@@ -6,7 +8,7 @@ const OurWorks = () => {
       category: "E-commerce • Fashion",
       title: "Luxury Fashion Rebrand",
       description: "Complete social media overhaul for a luxury fashion brand, resulting in explosive growth and unprecedented engagement.",
-      image: "/images/project-luxury-fashion.jpg",
+      image: assets.work2,
       stats: [
         { number: "400%", label: "Engagement Growth" },
         { number: "250K", label: "New Followers" }
@@ -16,7 +18,7 @@ const OurWorks = () => {
       category: "Tech • SaaS",
       title: "SaaS Product Launch",
       description: "Strategic launch campaign that positioned a new SaaS product as an industry leader and drove massive early adoption.",
-      image: "/images/project-saas-launch.jpg",
+      image: assets.work1,
       stats: [
         { number: "10K", label: "Month 1 Signups" },
         { number: "$2M", label: "Revenue Generated" }
@@ -54,7 +56,7 @@ const OurWorks = () => {
             >
               {/* Image Container */}
               <div className="relative w-full h-100 overflow-hidden bg-gray-100">
-                <img 
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

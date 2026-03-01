@@ -48,7 +48,7 @@ const Faq = () => {
     </div>
           
           <div className='flex-[50%]'>
-                <video playsInline loop controls src="/faq.mp4" className='rounded-3xl'></video>
+                <video playsInline loop controls src="https://res.cloudinary.com/dfuse3jtq/video/upload/v1772407153/faq_sawp7u.mp4" className='rounded-3xl'></video>
 
           </div>
     </div>

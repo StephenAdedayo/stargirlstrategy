@@ -12,7 +12,7 @@ const Contact = () => {
       <ContactForm />
       <Availability />
       <Location />
-      <Cta />
+      <Cta href="/quote/#quoteform" text="Request a Quote" />
     </div>
   )
 }

@@ -1,11 +1,17 @@
 import service_hero from "./service_hero.webp"
 import cta_image from "./cta_image.webp"
 import contact_hero from "./contact_hero.webp"
+import quote_hero from "./quote_hero.webp"
+import work1 from "./work1.webp"
+import work2 from "./work2.webp"
 
 export const assets = {
     service_hero,
     cta_image,
-    contact_hero
+    contact_hero,
+    quote_hero,
+    work1,
+    work2
 }
 
 

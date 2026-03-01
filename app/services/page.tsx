@@ -17,7 +17,7 @@ const Services = () => {
         <Process />
         <Pricing />
         <Faq />
-        <Cta />
+      <Cta href="/quote/#quoteform" text="Request a Quote" />
 
     </div>
   )
