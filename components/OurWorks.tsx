@@ -48,14 +48,14 @@ const OurWorks = () => {
         </div>
         
         {/* Projects Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid max-w-6xl mx-auto lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
               className="group bg-white rounded-3xl overflow-hidden border border-gray-300 transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_40px_100px_rgba(0,0,0,0.15)] hover:border-orange-500 cursor-pointer"
             >
               {/* Image Container */}
-              <div className="relative w-full h-100 overflow-hidden bg-gray-100">
+              <div className="relative w-full md:h-100 h-80 overflow-hidden bg-gray-100">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -67,7 +67,7 @@ const OurWorks = () => {
               </div>
               
               {/* Content */}
-              <div className="p-10">
+              <div className="md:p-10 p-7">
                 {/* Category Badge */}
                 <div className="inline-block px-3.5 py-1.5 bg-orange-500/8 rounded-full mb-4">
                   <span className="text-orange-500 text-[13px] font-semibold uppercase tracking-wide">
