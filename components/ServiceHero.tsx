@@ -6,8 +6,8 @@ const ServiceHero = () => {
   return (
 <div className='w-full h-screen relative'>
         
-        <div className='absolute inset-0'>
-            <Image src={assets.service_hero} fill priority alt='service_hero  object-center object-cover'/>
+        <div className='absolute inset-0 h-screen'>
+            <Image src={assets.service_hero} fill  priority alt='service_hero ' className='object-cover object-center'/>
         </div>
 
         <div className='absolute inset-0 bg-black/50'/>

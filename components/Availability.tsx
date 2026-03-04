@@ -26,7 +26,7 @@ const Availability = () => {
             </span>
           </div>
           
-          <h2 className="font-ovo text-5xl lg:text-6xl font-semibold tracking-tight">
+          <h2 className="font-ovo text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
             When we're here for you
           </h2>
         </div>

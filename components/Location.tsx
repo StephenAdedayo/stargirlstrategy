@@ -13,7 +13,7 @@ const Location = () => {
             </span>
           </div>
           
-          <h2 className="font-ovo text-5xl lg:text-6xl font-semibold tracking-tight">
+          <h2 className="font-ovo text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
             Visit our office
           </h2>
         </div>

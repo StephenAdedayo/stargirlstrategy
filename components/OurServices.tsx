@@ -1,95 +1,11 @@
+import { services } from '@/assets/assets';
 import React from 'react';
 
 const OurServices = () => {
-  const services = [
-    {
-      number: "01",
-      icon: "📱",
-      title: "Social Media Management",
-      description: "Full-service management across all major platforms. We handle content, engagement, and growth.",
-      features: [
-        "Daily content posting",
-        "Community engagement",
-        "Content calendar",
-        "Platform optimization",
-        "Monthly reporting"
-      ],
-      link: "#"
-    },
-    {
-      number: "02",
-      icon: "✨",
-      title: "Content Creation",
-      description: "Stunning visuals, compelling copy, and engaging videos that stop the scroll.",
-      features: [
-        "Custom graphics",
-        "Video production",
-        "Copywriting",
-        "Brand photography",
-        "Motion graphics"
-      ],
-      link: "#"
-    },
-    {
-      number: "03",
-      icon: "🎯",
-      title: "Strategy & Consulting",
-      description: "Data-driven strategies tailored to your goals for maximum ROI.",
-      features: [
-        "Social media audits",
-        "Competitor analysis",
-        "Audience research",
-        "Content strategy",
-        "Growth planning"
-      ],
-      link: "#"
-    },
-    {
-      number: "04",
-      icon: "📊",
-      title: "Analytics & Reporting",
-      description: "Detailed insights and transparent reporting to track your growth.",
-      features: [
-        "Performance tracking",
-        "Custom dashboards",
-        "ROI measurement",
-        "Audience insights",
-        "Monthly reports"
-      ],
-      link: "#"
-    },
-    {
-      number: "05",
-      icon: "💬",
-      title: "Community Management",
-      description: "Build loyal communities around your brand with authentic engagement.",
-      features: [
-        "Message management",
-        "Comment moderation",
-        "Customer support",
-        "Crisis management",
-        "Sentiment analysis"
-      ],
-      link: "#"
-    },
-    {
-      number: "06",
-      icon: "🚀",
-      title: "Growth Campaigns",
-      description: "Targeted campaigns that drive followers, engagement, and conversions.",
-      features: [
-        "Campaign planning",
-        "Influencer partnerships",
-        "Paid advertising",
-        "Contest management",
-        "Launch strategies"
-      ],
-      link: "#"
-    }
-  ];
+ 
 
   return (
-    <section className="py-24 px-6 md:px-16 lg:px-20 bg-white">
+    <section id='services' className="py-24 scroll-mt-12 px-6 md:px-16 lg:px-20 bg-white">
       <div className="w-full mx-auto ">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
@@ -109,7 +25,7 @@ const OurServices = () => {
                 
                 {/* Icon */}
                 <div className="w-14 h-14 bg-linear-to-br from-orange-500/10 to-orange-400/10 rounded-2xl flex items-center justify-center text-3xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-linear-to-br group-hover:from-orange-500 group-hover:to-orange-400">
-                  {service.icon}
+                  <service.icon className='text-4xl' />
                 </div>
               </div>
               

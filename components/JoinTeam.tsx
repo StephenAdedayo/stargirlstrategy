@@ -1,24 +1,10 @@
+import { benefits } from '@/assets/assets';
 import React from 'react';
 
-const JoinTeam = () => {
-  const benefits = [
-    {
-      icon: "💰",
-      title: "Competitive Salary",
-      description: "Top-tier compensation with performance bonuses"
-    },
-    {
-      icon: "🏡",
-      title: "Remote First",
-      description: "Work from anywhere in the world"
-    },
-    {
-      icon: "📈",
-      title: "Growth Opportunities",
-      description: "Continuous learning and career development"
-    }
-  ];
 
+
+const JoinTeam = () => {
+  
   return (
     <section className="relative py-24 px-6 md:px-16 lg:px-20 bg-gray-100 overflow-hidden" id="careers">
       {/* Animated Background Blob */}
@@ -50,8 +36,8 @@ const JoinTeam = () => {
               key={index}
               className="bg-linear-to-br from-orange-500 via-orange-400 to-orange-300 backdrop-blur-md border border-white/20 rounded-3xl p-10 text-center transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="md:text-4xl text-4xl mb-4">
-                {benefit.icon}
+              <div className="md:text-4xl text-4xl mb-4 flex items-center justify-center text-white">
+                <benefit.icon />
               </div>
               <h4 className="md:text-xl text-lg font-bold text-white mb-3">
                 {benefit.title}

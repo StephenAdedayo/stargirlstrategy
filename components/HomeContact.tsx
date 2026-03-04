@@ -1,36 +1,38 @@
 
 import React from 'react';
 import Form from './Form';
+import { HiMail, HiPhone } from 'react-icons/hi';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { HiMapPin } from 'react-icons/hi2';
 
 const HomeContact = () =>  {
-
-
-  const contactMethods = [
-    {
-      icon: "✉",
-      title: "Email Us",
-      subtitle: "hello@stargirlstrategy.com",
-      link: "mailto:hello@stargirlstrategy.com"
-    },
-    {
-      icon: "💬",
-      title: "WhatsApp",
-      subtitle: "Chat with us instantly",
-      link: "https://wa.me/1234567890"
-    },
-    {
-      icon: "📞",
-      title: "Call Us",
-      subtitle: "+1 (234) 567-890",
-      link: "tel:+1234567890"
-    },
-    {
-      icon: "📍",
-      title: "Visit Us",
-      subtitle: "123 Market St, San Francisco",
-      link: "#"
-    }
-  ];
+  
+const contactMethods = [
+  {
+    icon: <HiMail />,
+    title: "Email Us",
+    subtitle: "hello@stargirlstrategy.com",
+    link: "mailto:hello@stargirlstrategy.com"
+  },
+  {
+    icon: <IoLogoWhatsapp  />,
+    title: "WhatsApp",
+    subtitle: "Chat with us instantly",
+    link: "https://wa.me/1234567890"
+  },
+  {
+    icon: <HiPhone  />,
+    title: "Call Us",
+    subtitle: "+234 234 567-890",
+    link: "tel:+234234567890"
+  },
+  {
+    icon: <HiMapPin  />,
+    title: "Visit Us",
+    subtitle: "Ikeja, Lagos",
+    link: "#"
+  }
+];
 
   return (
     <section className="py-24 px-6 md:px-16 lg:px-20 bg-gray-900 text-white" id="contact">

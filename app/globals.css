@@ -8,6 +8,7 @@
   --font-ovo: "Ovo", serif;
   --font-outfit: "Outfit", sans-serif;
   --breakpoint-xs: 335px;
+  --breakpoint-sml : 361px;
   
   /* Primary Brand Colors */
   --color-primary: #f08c00;

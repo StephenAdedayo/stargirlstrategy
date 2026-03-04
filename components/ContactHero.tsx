@@ -6,8 +6,8 @@ const ContactHero = () => {
   return (
     <div className='w-full h-screen relative'>
             
-            <div className='absolute inset-0'>
-                <Image src={assets.contact_hero} fill priority alt='contact_hero  object-center object-cover'/>
+            <div className='absolute inset-0 h-screen'>
+                <Image src={assets.contact_hero} fill priority alt='contact_hero' className='object-center object-cover'/>
             </div>
     
             <div className='absolute inset-0 bg-black/80'/>

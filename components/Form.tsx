@@ -98,7 +98,7 @@ const Form = ({input1, input2, input3, input4, input5, textarea} : Input) => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+1 (234) 567-890"
+                  placeholder="+234 234 567-890"
                   className={input4}
                 />
               </div>

@@ -3,10 +3,10 @@ import React from 'react'
 const WhatOurClientsSays = () => {
 
  const testimonials = [
-        { id: 1, text: "If you're using Tailwind CSS, PrebuiltUI is a must have. It dramatically speeds up development while keeping the UI clean and modern.", name: "Alex Morgan", role: "Founder - Lumens", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200"},
-        { id: 2, text: "PrebuiltUI has completely changed how I build interfaces. Most recommended components and templates.", name: "Sarah Collins", role: "Tech Lead - You Inc.", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" },
-        { id: 3, text: "PrebuiltUI templates are the most useful product for UI engineers. Saving me hours on every saas project.", name: "Emily Carter", role: "UI Engineer - Meta", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200" },
-        { id: 4, text: "PrebuiltUI allows me to focus on building features instead of writing CSS. Everything looks premium right out of the box.", name: "Ryan Collins", role: "Co-founder - Unique", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200" }
+{ id: 1, text: "StargirlStrategy completely transformed our social media presence. Their strategic approach and creative excellence delivered results beyond our expectations.", name: "Sarah Chen", role: "CEO - ModernLux", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200"},
+{ id: 2, text: "Working with StargirlStrategy has been incredible. Our engagement tripled and we've never been more connected with our audience.", name: "James Rodriguez", role: "Founder - TechFlow", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" },
+{ id: 3, text: "The team at StargirlStrategy doesn't just manage social media—they craft stories that resonate. Our brand has never looked better.", name: "Maya Patel", role: "Marketing Director - StyleHub", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200" },
+{ id: 4, text: "StargirlStrategy's data-driven approach and creative content helped us achieve 250% growth in just 3 months. Highly recommended!", name: "David Okafor", role: "Co-founder - GrowthLab", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200" }
     ];
 
   return (
@@ -52,7 +52,7 @@ const WhatOurClientsSays = () => {
                                     ))}
                                 </div>
 
-                                <p className={`text-gray-600 text-sm leading-relaxed ${index === 0 || index === 3 ? 'max-w-xl mb-14' : 'mb-8'}`}>
+                                <p className={`text-gray-600 font-ovo  leading-relaxed xl:text-lg sm:text-base  text-sm ${index === 0 || index === 3 ? 'max-w-xl mb-14' : 'mb-8'}`}>
                                     {testimonial.text}
                                 </p>
 
