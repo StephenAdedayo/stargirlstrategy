@@ -23,10 +23,10 @@ const JoinTeam = () => {
         
         {/* CTA Button */}
         <a 
-          href="mailto:careers@stargirlstrategy.com"
+          href="https://tally.so/r/MeOYKl"
           className="inline-block bg-white text-orange-500 md:px-12 md:py-5 px-8 py-3 rounded-full font-bold text-lg shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 hover:scale-105"
         >
-          View Open Positions
+          Join Team
         </a>
         
         {/* Benefits Grid */}

@@ -1,9 +1,10 @@
 import { pricingPlans } from '@/assets/assets'
+import Link from 'next/link'
 import React from 'react'
 
 const Pricing = () => {
   return (
-    <section className="py-24 px-6 lg:px-20 md:px-16 bg-white relative" id="services">
+    <section className="py-24 px-6 lg:px-20 md:px-16 bg-white relative scroll-mt-20" id="pricing">
       <div className="w-full mx-auto ">
         
         {/* Section Header */}
@@ -53,9 +54,9 @@ const Pricing = () => {
                 ))}
               </ul>
               
-              <a href="" className=''>
+              <Link href="/quote/#quoteform" className=''>
                 <button className={`mt-10 rounded-full py-5 text-center w-full border border-gray-300 ${plan.popular ? "bg-white text-navtext border-none" : "bg-linear-to-br active:hover:scale-105 transition-all delay-75 duration-300 from-orange-500 to-orange-400 text-white"} font-semibold `}>Get Started</button>
-                </a>
+                </Link>
 
             </div>
         ))}

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
@@ -24,35 +25,33 @@ const Hero = () => {
             
             {/* Heading */}
             <h1 className="font-ovo text-4xl lg:text-7xl xl:text-8xl font-semibold text-white leading-[1.05]  max-xs:text-lg tracking-tight">
-              Transform Your<br />
+               Social media, 
+<br />
               <span className="bg-linear-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent">
-                Social Presence
-              </span>
+handled.              </span>
             </h1>
             
             {/* Description */}
             <p className="sm:text-xl max-xs:text-xs text-base text-white/85 leading-relaxed max-w-2xl">
-              We craft data-driven social media strategies that amplify your brand, 
-              engage your audience, and deliver measurable ROI. From content creation 
-              to community management, we handle it all.
+              From strategy to content and day-to-day management, we help brands show up consistently and connect with the right audience on social media.
             </p>
             
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
-              <a 
-                href="#contact" 
+              <Link 
+                href="/services/#services" 
                 className="group relative inline-flex items-center gap-3 bg-linear-to-r from-orange-500  max-xs:px-4 max-xs:py-2 to-orange-400 text-white md:px-10 px-6 md:py-4 py-3 rounded-full font-semibold shadow-[0_8px_30px_rgba(240,140,0,0.3)] hover:shadow-primary-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
               >
-                <span className="relative z-1">Get Started Free</span>
+                <span className="relative z-1">Hire Us</span>
                 <span className="relative z-1 group-hover:translate-x-1 transition-transform">→</span>
                 <div className="absolute inset-0 bg-linear-to-r from-orange-400 to-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </a>
+              </Link>
               
               <a 
-                href="#work" 
+                href="tel:+2348068395142" 
                 className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md text-white max-xs:px-4 max-xs:py-2 md:px-10 px-6 md:py-4 py-3 rounded-full font-semibold border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1"
               >
-                View Our Work
+                Book a call
               </a>
             </div>
 

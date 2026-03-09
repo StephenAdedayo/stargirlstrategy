@@ -11,26 +11,26 @@ const contactMethods = [
   {
     icon: <HiMail />,
     title: "Email Us",
-    subtitle: "hello@stargirlstrategy.com",
-    link: "mailto:hello@stargirlstrategy.com"
+    subtitle: "info@stargirlstrategy.com",
+    link: "mailto:info@stargirlstrategy.com"
   },
   {
     icon: <IoLogoWhatsapp  />,
     title: "WhatsApp",
     subtitle: "Chat with us instantly",
-    link: "https://wa.me/1234567890"
+    link: "https://wa.me/2348068395142"
   },
   {
     icon: <HiPhone  />,
     title: "Call Us",
-    subtitle: "+234 234 567-890",
-    link: "tel:+234234567890"
+    subtitle: "+2348068395142",
+    link: "tel:+2348068395142"
   },
   {
     icon: <HiMapPin  />,
     title: "Visit Us",
     subtitle: "Ikeja, Lagos",
-    link: "#"
+    link: "/contact/#location"
   }
 ];
 

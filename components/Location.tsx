@@ -2,7 +2,7 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <section className="py-24 bg-white px-6 md:px-16 lg:px-20">
+    <section className="py-24 bg-white px-6 md:px-16 lg:px-20 scrol-mt-20" id='location'>
       <div className="w-full mx-auto ">
         
         {/* Section Header */}

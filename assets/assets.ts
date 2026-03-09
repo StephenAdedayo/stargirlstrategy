@@ -128,7 +128,7 @@ export const services : Service[] = [
       "Platform optimization",
       "Monthly analytics reports"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   },
   {
     number: "02",
@@ -142,7 +142,7 @@ export const services : Service[] = [
       "Ad creative design",
       "Performance optimization"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   },
   {
     number: "03",
@@ -156,7 +156,7 @@ export const services : Service[] = [
       "Infographics",
       "Print design"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   },
   {
     number: "04",
@@ -170,7 +170,7 @@ export const services : Service[] = [
       "Email campaigns",
       "Blog articles"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   },
   {
     number: "05",
@@ -184,7 +184,7 @@ export const services : Service[] = [
       "Website maintenance",
       "Performance monitoring"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   },
   {
     number: "06",
@@ -198,7 +198,7 @@ export const services : Service[] = [
       "Social media reels",
       "Corporate videos"
     ],
-    link: "#"
+    link: "https://tally.so/r/A7Jx9z"
   }
 ];
 

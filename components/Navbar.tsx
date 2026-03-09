@@ -44,9 +44,9 @@ const Navbar = () => {
       
       <nav className={`flex z-10 transition-all duration-300 fixed w-full justify-between items-center py-6 max-xs:py-3 max-xs:px-3 px-6 md:px-16 lg:px-20 ${isScrolled ? "bg-nav/95 backdrop-blur-3xl" : "" }`}>
 
-         <div>
+         <a href='/'>
           <Image src={assets.stargirl}  className='w-20  aspect-auto'  alt='logo'/>
-         </div>
+         </a>
 
 
     {/* navlinks */}
@@ -62,15 +62,15 @@ const Navbar = () => {
 
 
          <div className='flex items-center gap-5 max-xs:gap-1'>
-          <div className="bg-[#fa7a1e] border-[#fa7a1e] border-2 flex items-center justify-center rounded-full cursor-pointer transition-all duration-300 active:scale-110 hover:scale-105 size-10">
+          <a href="https://wa.me/2348068395142" target="_blank" rel="noopener noreferrer" className="bg-[#fa7a1e] border-[#fa7a1e] border-2 flex items-center justify-center rounded-full cursor-pointer transition-all duration-300 active:scale-110 hover:scale-105 size-10">
           <FaWhatsapp className={`text-white text-xl ${isScrolled ? "text-white" : ""}`}/>
          
-          </div>
+          </a>
 
-          <div className="bg-[#fa7a1e] border-[#fa7a1e] border-2 flex items-center justify-center rounded-full size-10 transition-all duration-300 active:scale-110 hover:scale-105 cursor-pointer">
+          <a href="tel:+2348068395142" className="bg-[#fa7a1e] border-[#fa7a1e] border-2 flex items-center justify-center rounded-full size-10 transition-all duration-300 active:scale-110 hover:scale-105 cursor-pointer">
           <BsTelephone className={`text-white text-xl ${isScrolled ? "text-white" : ""}`}/>
          
-          </div>
+          </a>
 
             <RiMenu3Fill onClick={() => setIsMenuOpen(true)} className={`lg:hidden block text-2xl cursor-pointer text-white`}/>
 
@@ -85,10 +85,10 @@ const Navbar = () => {
               <FaTimes onClick={() => setIsMenuOpen(false)} className='text-3xl text-orange-400'/>
             </div>
           
-          <div className='flex justify-center items-center'>
+          <a href='/' className='flex justify-center items-center '>
             {/* <Image /> */}
           <Image src={assets.stargirl}  className='w-20  aspect-auto'  alt='logo'/>
-          </div>
+          </a>
 
             <div className='flex flex-col gap-6 mt-10  w-full'>
            {links.map((link, index) => {
@@ -104,7 +104,7 @@ const Navbar = () => {
 
          <div className='text-center mt-10 group bg-orange-500/10 border px-6 rounded-2xl py-2 border-orange-500/30 flex items-center   gap-3'>
          <BsTelephone className='text-white text-xl transition-colors duration-300 group-hover:text-orange-400'/>
-            <a href="tel: +234 234567890" className='text-white transition-colors duration-300 group-hover:text-orange-400 '>
+            <a href="tel: +2348068395142" className='text-white transition-colors duration-300 group-hover:text-orange-400 '>
               +234 234567890
             </a>
          </div>

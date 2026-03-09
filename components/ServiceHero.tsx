@@ -33,7 +33,7 @@ From strategy to execution, we provide end-to-end services that transform your s
 
             <div className="flex flex-wrap gap-4">
               <a 
-                href="#contact" 
+                href="#services" 
                 className="group relative inline-flex items-center gap-3 bg-linear-to-r from-orange-500  max-xs:px-4 max-xs:py-2 to-orange-400 text-white md:px-10 px-6 md:py-4 py-3 rounded-full font-semibold shadow-[0_8px_30px_rgba(240,140,0,0.3)] hover:shadow-primary-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
               >
                 <span className="relative z-1">Get Started Free</span>
@@ -42,7 +42,7 @@ From strategy to execution, we provide end-to-end services that transform your s
               </a>
               
               <a 
-                href="#work" 
+                href="#pricing" 
                 className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md text-white max-xs:px-4 max-xs:py-2 md:px-10 px-6 md:py-4 py-3 rounded-full font-semibold border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1"
               >
                 View Pricing
