@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='relative h-screen max-xs:min-h-screen'>
       
        <div>
-        <video autoPlay muted playsInline loop  src="https://res.cloudinary.com/dfuse3jtq/video/upload/v1772407050/media_kyc1dr.mp4" className='w-full object-cover object-center h-screen max-xs:min-h-screen'></video>
+        <video autoPlay muted playsInline loop  src="https://res.cloudinary.com/dfuse3jtq/video/upload/v1773154524/2512877-hd_1920_1080_30fps_ica59v.mp4" className='w-full object-cover object-center h-screen max-xs:min-h-screen'></video>
        </div>
 
        <div className='absolute inset-0 bg-black/50 h-screen max-xs:min-h-screen'>
