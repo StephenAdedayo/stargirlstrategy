@@ -3,6 +3,7 @@ import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"],
@@ -34,6 +35,11 @@ export default function RootLayout({
             {children}
         </main>
        <Footer />
+
+       <Script
+          src="https://tally.so/widgets/embed.js" 
+          strategy="afterInteractive" 
+        />
       </body>
     </html>
   );

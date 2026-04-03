@@ -30,6 +30,7 @@ const HomeServices = () =>  {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.slice(0,3).map((service, index)  => (
+            <a key={index} href={`/services/${service.link}`}>
             <div 
               key={index}
               className="group relative bg-white border border-gray-300 rounded-3xl p-8 sm:p-10 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(0,0,0,0.12)] hover:border-orange-500 overflow-hidden"
@@ -53,16 +54,17 @@ const HomeServices = () =>  {
               </p>
               
               {/* Link */}
-              <a 
-                href={service.link}
+              <p
                 className="inline-flex items-center gap-2 text-orange-500 font-semibold text-[15px] group-hover:gap-3 transition-all duration-300"
               >
                 Get Quote
                 <span className="transition-transform duration-300">→</span>
-              </a>
+              </p>
             </div>
+            </a>
           ))}
         </div>
+        
 
    <div className='max-w-max mx-auto mt-12'>
         <button><Link href="/services/#services" className="inline-flex items-center gap-2 text-orange-500 font-semibold text-[15px] group-hover:gap-3 transition-all duration-300 ">
@@ -70,6 +72,7 @@ const HomeServices = () =>  {
           <span className="transition-transform duration-300">→</span>
         </Link></button>
    </div>
+   
         
       </div>
     </section>

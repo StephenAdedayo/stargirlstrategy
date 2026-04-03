@@ -35,7 +35,7 @@ const Navbar = () => {
 
   useEffect(() => {
       window.addEventListener("scroll", handleWheel)
-
+       
       return () => window.removeEventListener("scroll", handleWheel)
   }, [])
 

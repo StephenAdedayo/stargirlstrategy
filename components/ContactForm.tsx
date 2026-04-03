@@ -34,7 +34,7 @@ const contactMethods = [
 ];
 
   return (
-    <section className="py-24 px-6 md:px-16 lg:px-20 bg-gray-50" id="contact">
+    <section className="py-24  px-6 md:px-16 lg:px-20 bg-gray-50" id="contact">
       <div className="w-full mx-auto ">
         <div className=''>
             <h2 className="font-ovo  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 leading-tight">

@@ -9,6 +9,7 @@ const OurServices = () => {
       <div className="w-full mx-auto ">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
+            <a key={index} href={`/services/${service.link}`}>
             <div
               key={index}
               className="group relative bg-white border border-gray-200 rounded-3xl p-10 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(0,0,0,0.12)] hover:border-orange-500 overflow-hidden"
@@ -55,15 +56,17 @@ const OurServices = () => {
               </ul>
               
               {/* Link */}
-              <a
-                href={service.link}
+              <p
+              
                 className="inline-flex items-center gap-2 text-orange-500 font-semibold text-[15px] group-hover:gap-3 transition-all duration-300"
               >
                 Get Quote
                 <span className="transition-transform duration-300">→</span>
-              </a>
+              </p>
             </div>
+            </a>
           ))}
+          
         </div>
       </div>
     </section>
